@@ -1,86 +1,140 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-
-<head>
- <link type="text/css" rel="stylesheet" href="index.css"/>
- <title>Computational Vision and Geometry Lab	</title> 
-</head>
-
-<body>
-
- <div id="header">
-   <div class="banner"style="margin:0 auto;position:relative;">
-       <a href="http://cvgl.stanford.edu/index.html"><img src="banner_stanford.jpg"/></a>
-
-     <div id="nav">
-       <ul>
-         <li><a href="http://cvgl.stanford.edu/index.html">HOME</a></li>
-         <li><a href="http://cvgl.stanford.edu/research.html">RESEARCH</a></li>
-         <li><a href="http://cvgl.stanford.edu/people.html">PEOPLE</a></li>
-         <li><a href="http://cvgl.stanford.edu/publications.html">PUBLICATIONS</a></li>
-         <li><a href="http://cvgl.stanford.edu/resources.html">RESOURCES</a></li>
-         <li><a href="http://cvgl.stanford.edu/teaching.html">TEACHING</a></li>
-      </ul>
-     </div>
-
-  </div>
- </div>
-
-<div id="main">
-  <h1>Data-Driven 3D Voxel Patterns for Object Category Recognition</h1>
-  <div id="content">
-
-    <div id="box1">
-      <h2>Introduction</h2>
-        <table align="left" width="900" STYLE="margin-left:20px;">
-          <tbody>
-            <tr valign="top">
-							<img src="3DVP.png" width="350" align="center">
-            </tr>
-            <tr>
-	              <p align="justify"><font size="3" face="Verdana, Arial, Helvetica, sans-serif"> Despite the great progress achieved in recognizing objects as 2D bounding boxes in images, it is still very challenging to detect occluded objects and estimate the 3D properties of multiple objects from a single image. In this paper, we propose a novel object representation, 3D Voxel Pattern (3DVP), that jointly encodes the key properties of objects including appearance, 3D shape, viewpoint, occlusion and truncation. We discover 3DVPs in a data-driven way, and train a bank of specialized detectors for a dictionary of 3DVPs. The 3DVP detectors are capable of detecting objects with specific visibility patterns and transferring the meta-data from the 3DVPs to the detected objects, such as 2D segmentation mask, 3D pose as well as occlusion or truncation boundaries. The transferred meta-data allows us to infer the occlusion relationship among objects, which in turn provides improved object recognition results. Experiments are conducted on the KITTI detection benchmark [1] and the outdoor-scene dataset [2]. We improve state of-the-art results on car detection and pose estimation with notable margins. We also verify the ability of our method in accurately segmenting objects from the background and localizing them in 3D. </font>
-  	            </p>
-            </tr>
-						<tr valign="top">
-							<img src="3DVP_results.png" width="920" align="center">
-						</tr>	
-          </tbody>
-        </table>
-    </div>
-
-    <div id="box1">
-      <h2>Publication</h2>
-        <ul><li align="justify"><font size="3" face="Verdana, Arial, Helvetica, sans-serif"><a href="https://sites.google.com/site/visionyuxiang/">Yu Xiang</a>, <a href="http://www-personal.umich.edu/~wgchoi/">Wongun Choi</a>, <a href="http://www.linyq.com/">Yuanqing Lin</a> and <a href="http://cvgl.stanford.edu/silvio/">Silvio Savarese</a>. Data-Driven 3D Voxel Patterns for Object Category Recognition. In IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2015. <a href="http://cvgl.stanford.edu/papers/xiang_cvpr15_3dvp.pdf">pdf</a>, <a href="http://cvgl.stanford.edu/bibtex/xiang_cvpr15.bib">bibtex</a>, <a href="http://cvgl.stanford.edu/papers/xiang_cvpr15_3dvp_tr.pdf">technical report</a></font></li></ul>
-    </div>
-
-    <div id="box1">
-      <h2>Code</h2>
-        <ul><li align="justify"><font size="3" face="Verdana, Arial, Helvetica, sans-serif"> Code will be available soon. </font></li></ul>
-    </div>
-
-    <div id="box1">
-      <h2>References</h2>
-        <ul>
-            <li type="1" align="justify"><font size="3" face="Verdana, Arial, Helvetica, sans-serif"> A. Geiger, P. Lenz, and R. Urtasun. Are we ready for autonomous driving? the kitti vision benchmark suite. In CVPR, pages 3354–3361, 2012.</font></li>
-            <li type="1" align="justify"><font size="3" face="Verdana, Arial, Helvetica, sans-serif"> Y. Xiang and S. Savarese. Object detection by 3d aspectlets and occlusion reasoning. In 3dRR, pages 530–537, 2013.</font></li>
-        </ul>
-    </div>
-
-    <div id="box1">
-      <h2>Acknowledgements</h2>
-        <ul><li align="justify"><font size="3" face="Verdana, Arial, Helvetica, sans-serif"> We acknowledge the support of NSF CAREER grant N.1054127, ONR award N000141110389, and DARPA UPSIDE grant A13-0895-S002.
-	      </font></li></ul>
-    </div>
-
-    <div id="box1">
-        <ul>
-        <p><font size="3" face="Verdana">Contact : yuxiang at umich dot edu</font></p>
-        <p><font size="3" face="Verdana">Last update : 3/26/2015</font></p>
-        </ul>
-    </div>
-
- </div> 
-</div>
-</body>
+<html>
+	<head>
+		<title>
+			Yu Xiang's homepage
+		</title>
+	</head>
+	
+	<body>
+		<table width="100%">
+			<tr valign="top">
+				<td width="150px"></td>
+				<td>
+					
+		<img  src='my_logo.png' height='200' border='0'/>
+		<h2>Yu Xiang's homepage</h2>
+									
+		<h2>Biography</h2>
+			I am a Phd student in the Electrical Engineering and Computer Science Department at the University of Michigan. I joined the computer vision lab at the University of Michigan in 2010. My advisor is Prof. <a rel='nofollow' target='_blank' href='http://cvgl.stanford.edu/silvio/'>Silvio Savarese</a>. My research focuses on understanding objects and scenes from images and videos, with emphasis on recognizing both semantic and 3D geometric properties of objects and scenes. My current work attempts to develop 3D object representation and recognition methods which can be useful for real world applications. I received my B.S. degree in computer science from Fudan University in 2007 and my M.S. degree in computer science from Fudan University in 2010. I did research on automatic image annotation under the supervision of Prof. <a rel='nofollow' target='_blank' href='http://homepage.fudan.edu.cn/xdzhou/'>Xiangdong Zhou</a> for my master thesis.</font> (<a target='_blank' href='CV_YuXiang.pdf'>CV</a>)
+											
+		<h2>News</h2>
+		
+		<a class="twitter-timeline" href="https://twitter.com/YuXiang_UofM" data-widget-id="609866359862734848">Tweets by @YuXiang_UofM</a>
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>	
+		
+		<ul>
+			<li><font size='3'>3/8/2015 Two papers accepted in CVPR 2015! 3DVP is accepted as oral presentation!</font></li>
+			<li><font size='3'>1/23/2015 Finish my thesis proposal: 3D Object Representations for Recognition.</font></li>
+			<li><font size='3'>6/15/2014 Our work on multiview object tracking is accepted to ECCV 2014!</font></li>
+			<li><font size='3'>5/18/2014 PASCAL3D+ version 1.1 is available now! Check it out to see how it can benefit your research!</font></li>
+			<li><font size='3'>5/5/2014 I started a 3-month internship at NEC Labs America in Cupertino.</font></li>
+			<li><font size='3'>2/15/2014 Our PASCAL3D+ benchmark (version 1.0) is released!</font></li>
+			<li><font size='3'>1/30/2014 Our work on building a large scale dataset for 3D object detection and pose estimation is accepted to WACV 2014!</font></li>
+			<li><font size='3'>10/5/2013 Our paper is accepted to the 3dRR workshop in conjunction with ICCV 2013.</font></li>
+			<li><font size='3'>9/1/2013 I moved to Stanford as a visiting student.</font></li>
+			<li><font size='3'>Our paper has been accepted to the ECCV 2012 conference.</font></li>
+			<li><font size='3'>I received the Outstanding Master's Thesis Award of Shanghai. <br/></font></li>
+			<li><font size='3'>Our CVPR 2012 paper and code are available!</font></li>
+		</ul>
+					
+		<h2>Publications</h2>
+			<div><font size='4'>Since 2010 (Image and the 3D World)</font></div>
+			<div><font size='4'><br/></font></div><div><font size='4'>
+						
+			<table style='border-width:1px;border-color:rgb(255,255,255);border-collapse:collapse' cellspacing='0' bordercolor='#888' border='1'>
+				<tbody>
+									
+					<tr><td style='width:101px;height:89px'> <a imageanchor='1' href='3DVP.png'><img width='100' src='3DVP.png' height='77' border='0'/></a></td> <td style='width:771px;height:89px'><font size='3'><b>Data-Driven 3D Voxel Patterns for Object Category Recognition</b></font><br/><b>Yu Xiang</b>, Wongun Choi, Yuanqing Lin and Silvio Savarese<br/> In IEEE Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2015.<br/> <a target='_blank' href='xiang_cvpr15_3dvp.pdf'>PDF</a>, 
+					<a target='_blank' href='xiang_cvpr15.bib'>BibTex</a>, <a target='_blank' href='xiang_cvpr15_3dvp_tr.pdf'>Technical_Report</a>,
+					<a rel='nofollow' target='_blank' href='http://www.cvlibs.net/datasets/kitti/eval_object_detail.php?result=d9b2ea5ae01914da7c59c08a20536c022303496b'>KITTI_Results</a>, <a rel='nofollow' target='_blank' href='http://cvgl.stanford.edu/projects/3DVP/'>Project</a>, Oral_Presentation</td></tr>
+			
+					<tr><td style='width:101px;height:89px'> <a imageanchor='1' href='cvpr15_mottaghi.png'><img width='100' src='cvpr15_mottaghi.png' height='77' border='0'/></a></td> <td style='width:771px;height:89px'><font size='3'><b>A Coarse-to-Fine Model for 3D Pose Estimation and Sub-category Recognition</b></font><br/>Roozbeh Mottaghi, <b>Yu Xiang</b> and Silvio Savarese<br/> In IEEE Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2015.<br/> <a target='_blank' href='mottaghi_cvpr15.pdf'>PDF</a>, 
+					<a target='_blank' href='mottaghi_cvpr15.bib'>BibTex</a>, <a target='_blank' href='mottaghi_cvpr15_tr.pdf'>Technical_Report</a>,
+					<a rel='nofollow' target='_blank' href='http://cvgl.stanford.edu/projects/C2F/'>Project</a></td></tr>
+			
+					<tr><td style='width:101px;height:89px'> <a imageanchor='1' href='multiview_tracker.png'><img width='100' src='multiview_tracker.png' height='77' border='0'/></a></td> <td style='width:771px;height:89px'><font size='3'><b>Monocular Multiview Object Tracking with 3D Aspect Parts</b></font><br/><b>Yu Xiang</b>*, Changkyu Song*, Roozbeh Mottaghi and Silvio Savarese (*equal contribution)<br/> In European Conference on Computer Vision (<b>ECCV</b>), 2014.<br/> <a target='_blank' href='xiang_eccv14.pdf'>PDF</a>, 
+					<a target='_blank' href='xiang_eccv14.bib'>BibTex</a>, <a target='_blank' href='xiang_eccv14_tr.pdf'>Technical_Report</a>, <a target='_blank' href='xiang_eccv14_poster.pdf'>Poster</a>, <a target='_blank' href='Xiang_Stanford_02242015.pdf'>Slides</a>,
+					<a rel='nofollow' target='_blank' href='http://cvgl.stanford.edu/projects/multiview_tracking'>Project</a></td></tr>			
+											
+					<tr><td style='width:101px;height:89px'> <a imageanchor='1' href='pascal3d.png'><img width='100' src='pascal3d.png' height='77' border='0'/></a></td> <td style='width:771px;height:89px'><font size='3'><b>Beyond PASCAL: A Benchmark for 3D Object Detection in the Wild</b></font><br/><b>Yu Xiang</b>, Roozbeh Mottaghi and Silvio Savarese<br/> In IEEE Winter Conference on Applications of Computer Vision (<b>WACV</b>), 2014.<br/> <a target='_blank' href='xiang_wacv14.pdf'>PDF</a>, 
+					<a target='_blank' href='xiang_wacv14.bib'>BibTex</a>, <a target='_blank' href='xiang_wacv14_poster.pdf'>Poster</a>, <a target='_blank' href='Xiang_WACV_03242014.pdf'>Slides</a>,
+					<a rel='nofollow' target='_blank' href='http://cvgl.stanford.edu/projects/pascal3d.html'>PASCAL3D+</a></td></tr>
+											
+					<tr><td style='width:101px;height:89px'> <a imageanchor='1' href='SLM.png'><img width='100' src='SLM.png' height='77' border='0'/></a></td> <td style='width:771px;height:89px'><font size='3'><b>Object Detection by 3D Aspectlets and Occlusion Reasoning</b></font><br/><b>Yu Xiang</b>* and Silvio Savarese <br/> In the 4th International IEEE Workshop on 3D Representation and Recognition (<b>3dRR</b>), 2013.<br/> <a target='_blank' href='xiang_3drr13.pdf'>PDF</a>, 
+					<a target='_blank' href='xiang_3drr13.bib'>BibTex</a>, <a target='_blank' href='xiang_3drr13_tr.pdf'>Technical_Report</a>, <a target='_blank' href='Xiang_3dRR_12082013.pdf'>Slides</a>,
+					<a rel='nofollow' target='_blank' href='http://cvgl.stanford.edu/projects/SLM'>Project</a></td></tr>							
+												
+					<tr><td style='width:101px;height:89px'> <a imageanchor='1' href='codetector.png'><img width='100' src='codetector.png' height='77' border='0'/></a></td> <td style='width:771px;height:89px'><font size='3'><b>Object Co-detection</b></font><br/>Sid Yingze Bao, <b>Yu Xiang</b> and Silvio Savarese<br/> In European Conference on Computer Vision (<b>ECCV</b>), vol. 7572, pp. 86-101, 2012.<br/> <a target='_blank' href='bao_eccv12.pdf'>PDF</a>, 
+					<a target='_blank' href='bao_eccv12.bib'>BibTex</a>, <a target='_blank' href='bao_eccv12_poster.pdf'>Poster</a>, <a target='_blank' href='Bao_Midwest_Workshop_2012.pdf'>Slides</a>,
+					<a rel='nofollow' target='_blank' href='http://cvgl.stanford.edu/projects/codetection/index.html'>Project</a></td></tr>										
+											
+					<tr><td style='width:101px;height:89px'> <a imageanchor='1' href='ALM.png'><img width='100' src='ALM.png' height='77' border='0'/></a></td> <td style='width:771px;height:89px'><font size='3'><b>Estimating the Aspect Layout of Object Categories</b></font><br/><b>Yu Xiang</b> and Silvio Savarese<br/>In IEEE Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), pp. 3410-3417, 2012.<br/> <a target='_blank' href='xiang_cvpr12.pdf'>PDF</a>, 
+					<a target='_blank' href='xiang_cvpr12.bib'>BibTex</a>, <a target='_blank' href='xiang_cvpr12_tr.pdf'>Technical Report</a>, <a target='_blank' href='xiang_cvpr12_poster.pdf'>Poster</a>, <a target='_blank' href='Xiang_Midwest_Workshop_09212012.pdf'>Slides</a>, <a rel='nofollow' href='http://cvgl.stanford.edu/projects/ALM/Aspect_Layout_Model.zip'>Code</a>, 
+					<a rel='nofollow' target='_blank' href='http://cvgl.stanford.edu/projects/ALM'>Project</a></td></tr>
+											
+									
+				</tbody></table>
+   				<div><font size='4'><br/></font></div><div><font size='4'>
+								
+				</font></div><span style='font-size:large'>Before 2010 (Image and Text)</span><div><font size='4'><br/></font><div><font size='4'>
+					
+				<table style='border-width:1px;border-color:rgb(255,255,255);border-collapse:collapse' cellspacing='0' bordercolor='#888' border='1'>
+					<tbody>
+						
+						<tr><td style='width:101px;height:89px'> <a imageanchor='1' href='MMCRF.png'><img width='100' src='MMCRF.png' height='60' border='0'/></a></td> <td style='width:771px;height:89px'><font size='3'><b>Semantic Context Modeling with Maximal Margin Conditional Random Fields for Automatic Image Annotation</b></font><br/><b>Yu Xiang</b>, Xiangdong Zhou, Zuotao Liu, Tat-Seng Chua and Chong-Wah Ngo<br/>In IEEE Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), pp. 3368-3375, 2010.<br/> <a target='_blank' href='xiang_cvpr10.pdf'>PDF</a>, 
+						<a target='_blank' href='xiang_cvpr10.bib'>BibTex</a>, <a target='_blank' href='xiang_cvpr10_tr.pdf'>Technical Report</a></td></tr>
+						
+						<tr><td style='width:101px;height:89px'> <a imageanchor='1' href='liu_pcm10.png'><img width='100' src='liu_pcm10.png' height='77' border='0'/></a></td> <td style='width:771px;height:89px'><font size='3'><b>Learning Contextual Metrics for Automatic Image Annotation</b></font><br/>Zuotao Liu, Xiangdong Zhou, <b>Yu Xiang</b> and Yan-Tao Zheng<br/>In Advances in Multimedia Information Processing - PCM, vol. 6297, pp. 124-135, 2010.<br/> <a target='_blank' href='liu_pcm10.pdf'>PDF</a>, 
+						<a target='_blank' href='liu_pcm10.bib'>BibTex</a></td></tr>	
+		
+						<tr><td style='width:101px;height:89px'> <a imageanchor='1' href='xiang_cvpr09.png'><img width='100' src='xiang_cvpr09.png' height='77' border='0'/></a></td> <td style='width:771px;height:89px'><font size='3'><b>A Revisit of Generative Model for Automatic Image Annotation using Markov Random Fields</b></font><br/><b>Yu Xiang</b>, Xiangdong Zhou, Tat-Seng Chua and Chong-Wah Ngo<br/>In IEEE Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), pp. 1153-1160, 2009.<br/> <a target='_blank' href='xiang_cvpr09.pdf'>PDF</a>, 
+						<a target='_blank' href='xiang_cvpr09.bib'>BibTex</a></td></tr>																
+											
+						<tr><td style='width:101px;height:89px'> <a imageanchor='1' href='xu_jos09.png'><img width='100' src='xu_jos09.png' height='77' border='0'/></a></td> <td style='width:771px;height:89px'><font size='3'><b>Adaptive Model for Web Image Semantic Automatic Image Annotation</b></font><br/>Hongtao Xu, Xiangdong Zhou, <b>Yu Xiang</b> and Baile Shi<br/>In Journal of Software (in Chinese), vol. 21, no. 9, pp. 2183-2195, 2009.<br/> <a target='_blank' href='xu_jos09.pdf'>PDF</a>, 
+						<a target='_blank' href='xu_jos09.bib'>BibTex</a></td></tr>							
+										
+						<tr><td style='width:101px;height:89px'> <a imageanchor='1' href='xu_civr09.png'><img width='100' src='xu_civr09.png' height='77' border='0'/></a></td> <td style='width:771px;height:89px'><font size='3'><b>Exploiting Flickr's Related Tags for Semantic Annotation of Web Images</b></font><br/>Hongtao Xu, Xiangdong Zhou, Mei Wang, <b>Yu Xiang</b> and Baile Shi<br/>In Proceedings of the ACM International Conference on Image and Video Retrieval (<b>CIVR</b>), no. 46, 2009.<br/> <a target='_blank' href='xu_civr09.pdf'>PDF</a>, 
+						<a target='_blank' href='xu_civr09.bib'>BibTex</a></td></tr>							
+												
+						<tr><td style='width:101px;height:89px'> <a imageanchor='1' href='xu_adwm09.png'><img width='100' src='xu_adwm09.png' height='77' border='0'/></a></td> <td style='width:771px;height:89px'><font size='3'><b>Automatic Web Image Annotation via Web-Scale Image Semantic Space Learning</b></font><br/>Hongtao Xu, Xiangdong Zhou, Lan Lin, <b>Yu Xiang</b> and Baile Shi<br/>In Advances in Data and Web Management, vol. 5446, pp. 211-222, 2009.<br/> <a target='_blank' href='xu_adwm09.pdf'>PDF</a>, 
+						<a target='_blank' href='xu_adwm09.bib'>BibTex</a></td></tr>
+											
+				</tbody></table>
+					
+				<h2><a name='TOC-Thesis'/>Thesis</h2>
+					<ul>
+						<li><font size='3'><b>Graphical Models for Semantic Context Modeling in Automatic Image Annotation</b> </font>(<a target='_blank' style='font-size:medium' href='Xiang_master_thesis.pdf'>PDF</a>) <br/> Fudan University, Master thesis (in Chinese), Outstanding Master's Thesis Award of Shanghai, 2010.</li>
+					</ul>
+				
+				<h2><a name='TOC-Presentations'/>Presentations<br/></h2>
+					<ul>
+						<li><font size='3'><b>Monocular Multiview Object Tracking with 3D Aspect Parts </b>(<a target='_blank' href='Xiang_Stanford_02242015.pdf'>PDF</a>) <br/> In the 1st Stanford-SNU Workshop on Automated Driving, Stanford University, 02/24/2015.</font></li>
+							
+						<div><font size='3'><br/></font></div>
+							
+						<li><font size='3'><b>Beyond PASCAL: A Benchmark for 3D Object Detection in the Wild </b>(<a target='_blank' href='Xiang_WACV_03242014.pdf'>PDF</a>)	<br/> In IEEE Winter Conference on Applications of Computer Vision, Steamboat Springs, Colorado, 03/24/2014.
+									
+						<div><font size='3'><br/></font></div>
+							
+						<li><font size='3'><b>Object Detection by 3D Aspectlets and Occlusion Reasoning </b>(<a target='_blank' href='Xiang_3dRR_12082013.pdf'>PDF</a>)	<br/> In the 4th International IEEE Workshop on 3D Representation and Recognition in conjunction with ICCV, Sydney, Australia, 12/08/2013.
+									
+									
+						<div><font size='3'><br/></font></div>
+						
+						<li><font size='3'><b>Estimating the Aspect Layout of Object Categories </b>(<a target='_blank' href='Xiang_Midwest_Workshop_09212012.pdf'>PDF</a>)	<br/> In Midwest Vision Workshop, University of Illinois at Urbana-Champaign, 09/21/2012.				
+					</ul>
+					
+				<h2><a name='TOC-Links'/>Links</h2>
+					<ul>
+						<li><a rel='nofollow' target='_blank' href='http://cvgl.stanford.edu/'><font size='3'>Computational Vision and Geometry Lab at Stanford University</font></a></li>
+						
+						<li><font size='3'><a target='_blank' href='http://scholar.google.com/citations?user=9cZUlEYAAAAJ&amp;hl=en'>My Google Scholar Citations</a></font></li>
+					</ul>
+					
+					
+				</td>
+				<td width="150px"></td>
+			</tr>
+		</table>
+	</body>
 </html>
