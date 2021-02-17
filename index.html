@@ -56,7 +56,7 @@
 <tr><td style='width:101px;height:60px;text-align: center; vertical-align: middle'> A robot doing tasks in a kitchen with <a target='_blank' href='deng_icra20.pdf'>6D object pose estimation</a> and <a target='_blank' href='wang_rss20.pdf'>manipulation trajectory optimization</a>
 </td>
 <td style='width:101px;height:60px;text-align: center; vertical-align: middle'>
-6D grapsing of unseen objects with <a target='_blank' href='xiang_corl20.pdf'>unseen object instance segmentation</a> and a learned <a target='_blank' href='https://arxiv.org/pdf/2010.00824.pdf'>RL policy</a> for closed-loop control
+6D grapsing of unseen objects with <a target='_blank' href='xiang_corl20.pdf'>unseen object instance segmentation</a> and a learned <a target='_blank' href='https://arxiv.org/pdf/2010.00824.pdf'>RL policy</a> for closed-loop control.
 </td>
 </tr>
 
@@ -67,7 +67,13 @@
 		<h2>News</h2>
 		
 		<ul>
+                        <li><font size='3'>2/8/2021 Our work on unseen object instance segmentation is accepted to the IEEE
+Transactions on Robotics (T-RO).</font></li>
+                        <li><font size='3'>1/28/2021 Our work on long-horizon visual navigation is accepted to the IEEE Robotics and Automation
+Letters (RA-L).</font></li>
                         <li><font size='3'>1/17/2021 Co-organizing the <a target='_blank' href='https://sites.google.com/view/cvpr2021-3d-vision-robotics'>3D Vision and Robotics</a> workshop at CVPR 2021.</font></li>
+                        <li><font size='3'>12/28/2020 Our work on 6D Object Pose Tracking is accepted to the IEEE
+Transactions on Robotics (T-RO).</font></li>
                         <li><font size='3'>12/13/2020 We release our work on unseen object instance segmentation by learning RGB-D feature embeddings <a target='_blank' href='https://github.com/NVlabs/UnseenObjectClustering'>UnseenObjectClustering</a>.</font></li>
                         <li><font size='3'>12/13/2020 We release our implementation of <a target='_blank' href='https://github.com/NVlabs/PoseCNN-PyTorch'>PoseCNN</a> and <a target='_blank' href='https://github.com/NVlabs/DeepIM-PyTorch'>DeepIM</a> in PyTorch.</font></li>
                         <li><font size='3'>10/14/2020 Our work on learning feature embedings for unseen object segmentation is accepted to CoRL 2020.</font></li>
@@ -128,19 +134,49 @@ year      = {2020}
 </pre>
 </td></tr>
 
+</tbody></table>
 
-<tr><td style='width:101px;height:89px'> <a imageanchor='1' href='unseen_seg.png'><img width='100' src='unseen_seg.png' height='50' border='0'/></a></td> <td style='width:1200px;height:89px'><b>
-Unseen Object Instance Segmentation for Robotic Environments</b><br/>Christopher Xie, <b>Yu Xiang</b>, Arsalan Mousavian and Dieter Fox<br/> In arXiv, 2020. <br/> <a target='_blank' href='https://arxiv.org/pdf/2007.08073.pdf'>arXiv</a>, <a href="javascript:toggle_visibility('xie_unseen')">Bibtex</a>
-<pre id="xie_unseen" xml:space="preserve" style="display: none; font-size: 12px">
-@inproceedings{xie2020unseen,
-author    = {Christopher Xie and Yu Xiang and Arsalan Mousavian and Dieter Fox},
-title     = {Unseen Object Instance Segmentation for Robotic Environments},
-booktitle = {arXiv:2007.08073},
-year      = {2020}
+<div><font size='4'><br/></font></div><div><font size='4'>
+
+<div><font size='4'>2021</font></div>
+			<div><font size='4'><br/></font></div><div><font size='4'>
+			<table style='border-width:1px;border-color:rgb(255,255,255);border-collapse:collapse' cellspacing='0' bordercolor='#888' border='1'>
+				<tbody>
+
+<tr><td style='width:101px;height:89px'> <a imageanchor='1' href='meng_ral21.jpg'><img width='100' src='meng_ral21.jpg' height='70' border='0'/></a></td> <td style='width:1200px;height:89px'><b>Learning Composable Behavior Embeddings for Long-horizon Visual Navigation</b><br/>Xiangyun Meng, <b>Yu Xiang</b> and Dieter Fox<br/> In IEEE Robotics and Automation Letters (RA-L), 2021. <br/> <a target='_blank' href='meng_ral21.pdf'>PDF</a>, <a href="javascript:toggle_visibility('meng_ral21')">Bibtex</a>
+<pre id="meng_ral21" xml:space="preserve" style="display: none; font-size: 12px">
+@article{meng2021scaling,
+author    = {Xiangyun Meng and Yu Xiang and Dieter Fox},
+title     = {Learning Composable Behavior Embeddings for Long-horizon Visual Navigation},
+journal   = {IEEE Robotics and Automation Letters (RA-L)},
+year      = {2021}
 }
 </pre>
 </td></tr>
 
+
+<tr><td style='width:101px;height:89px'> <a imageanchor='1' href='unseen_seg.png'><img width='100' src='unseen_seg.png' height='50' border='0'/></a></td> <td style='width:1200px;height:89px'><b>
+Unseen Object Instance Segmentation for Robotic Environments</b><br/>Christopher Xie, <b>Yu Xiang</b>, Arsalan Mousavian and Dieter Fox<br/> In IEEE Transactions on Robotics (T-RO), 2021. <br/> <a target='_blank' href='https://arxiv.org/pdf/2007.08073.pdf'>arXiv</a>, <a href="javascript:toggle_visibility('xie_unseen_tro')">Bibtex</a>, <a target='_blank' href='https://rse-lab.cs.washington.edu/projects/unseen-object-instance-segmentation/'>Project</a>, <a target='_blank' href='https://github.com/chrisdxie/uois'>Code</a>
+<pre id="xie_unseen_tro" xml:space="preserve" style="display: none; font-size: 12px">
+@article{xie2021unseen,
+author    = {Christopher Xie and Yu Xiang and Arsalan Mousavian and Dieter Fox},
+title     = {Unseen Object Instance Segmentation for Robotic Environments},
+journal = {IEEE Transactions on Robotics (T-RO)},
+year      = {2021}
+}
+</pre>
+</td></tr>
+
+<tr><td style='width:101px;height:89px'> <a imageanchor='1' href='PoseRBPF.png'><img width='100' src='PoseRBPF.png' height='50' border='0'/></a></td> <td style='width:900px;height:89px'><b>PoseRBPF: A Rao-Blackwellized Particle Filter for 6D Object Pose Tracking</b><br/>Xinke Deng, Arsalan Mousavian, <b>Yu Xiang</b>, Fei Xia, Timothy Bretl and Dieter Fox<br/> In IEEE Transactions on Robotics (T-RO), 2021. <br/> <a target='_blank' href='deng_tro21.pdf'>PDF</a>, <a href="javascript:toggle_visibility('deng_pose_tro')">Bibtex</a>, <a href='https://www.youtube.com/watch?v=lE5gjzRKWuA'>Video</a>, <a target='_blank' href='https://github.com/NVlabs/PoseRBPF'>Code</a>
+<pre id="deng_pose_tro" xml:space="preserve" style="display: none; font-size: 12px">
+@article{deng2021pose,
+author    = {Xinke Deng and Arsalan Mousavian and Yu Xiang and Fei Xia and Timothy Bretl and Dieter Fox},
+title     = {PoseRBPF: A Rao-Blackwellized Particle Filter for 6D Object Pose Tracking},
+journal   = {IEEE Transactions on Robotics (T-RO)},
+year      = {2021}
+}
+</pre>
+</td></tr>
 
 </tbody></table>
 
